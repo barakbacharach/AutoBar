@@ -22,14 +22,8 @@ public class Recipe_Tuple {
 		// Example: create_recipe("martini", "one part gin, a bit of vermouth, olive for garnish", "gin-vermouth"
 		description= new_description;
 		name=drink_name;
-		//String[] temp_array= string_ingredients.split("/S");
 		ArrayList<String> templist = new ArrayList<String>(Arrays.asList(string_ingredients.split("-")));
-		//ingredients.addAll(Arrays.asList(temp_array));
 		HashSet<String> tempset= new HashSet<String>();
-//		while (!templist.isEmpty()){
-//			tempset.add(templist.get(0));
-//			templist=templist.subList(1,templist.size());
-//		}
 		tempset.addAll(templist);
 		ingredients=tempset;
 

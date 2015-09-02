@@ -3,6 +3,9 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 public class Drinks_List_Search{
+//This is the database object. The main is the database, which is complied every time.
+//More on that design decision below. This class contains only an easy method for 
+//inputting different recipes and the actual database itself.
 	
 	public static ArrayList<Recipe_Tuple> List_Recipes= new ArrayList();
 	public static HashSet<String> current_ingredients = new HashSet();
